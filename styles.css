@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(18, 24, 202);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem; /* Center the image and add some space below it */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(149, 207, 240);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    background-color: rgb(62, 86, 86);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
