@@ -1,95 +1,79 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #E0F7FA;
-    color: #00695C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #00ACC1;
-    color: white;
-    padding: 20px 0;
+    background-color: #007B8A;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #00838F;
+    background-color: #005f69;
 }
 
 main {
-    padding: 20px;
+    flex: 1;
+    padding: 2rem;
     max-width: 800px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-h2 {
-    color: #00ACC1;
+    width: 100%;
+    text-align: center;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 footer {
-    background-color: #00ACC1;
-    color: white;
+    background-color: #007B8A;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 1rem 0;
     width: 100%;
-    bottom: 0;
 }
 
-a {
-    color: #00695C;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#contact a {
+.btn {
     display: inline-block;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #E0F7FA;
-    border-radius: 50%;
-    color: #00695C;
-    transition: background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background-color: #007B8A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-#contact a:hover {
-    background-color: #B2EBF2;
-}
-
-#contact a i {
-    margin-right: 5px;
+.btn:hover {
+    background-color: #005f69;
 }
