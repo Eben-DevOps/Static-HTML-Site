@@ -37,13 +37,18 @@ Before you begin, ensure you have the following:
    -You should see the default Nginx welcome page indicating a successful installation.
 
 ## Step 3: Deploy Your Static Website
-Transfer Your Website Files:
+1. **Transfer Your Website Files:**
 
-   -Transfer your static website files (HTML, CSS, JS, images) to the Nginx web root directory.
+   -Transfer your static website files (HTML, CSS, JS, images) to the Nginx web root directory by cloning the GitHub Repository
    -By default, the web root is /var/www/html/.
    -You can do this by navigation to the web root folder using 
-      ```bash
+   ```bash
       cd /var/www/html
+2. **Clone the Githib Repository:**
+   -Use git clone to download the static website files
+   ```bash
+   Sudo git clone RepoURL
+
 
 
 Configure Nginx:
