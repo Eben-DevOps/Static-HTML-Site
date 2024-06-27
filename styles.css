@@ -65,15 +65,15 @@ footer {
 
 .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
+    padding: 10px 20px;
     background-color: #007B8A;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #005f69;
+    background-color: #011214;
+    color: #fff;
 }
