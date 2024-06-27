@@ -1,20 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".btn");
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all elements with the class 'btn' (assuming your buttons have this class)
+    const buttons = document.querySelectorAll('.btn');
 
+    // Loop through each button to add event listeners
     buttons.forEach(button => {
-        button.addEventListener("mouseover", function() {
-            this.style.backgroundColor = "#005f69";
+        // Add event listener for mouseenter (hover in)
+        button.addEventListener('mouseenter', function() {
+            // Change background color and text color on hover
+            button.style.backgroundColor = '#005f69';
+            button.style.color = '#fff';
+            button.style.transition = 'background-color 0.3s ease, color 0.3s ease'; // Smooth transition
         });
 
-        button.addEventListener("mouseout", function() {
-            this.style.backgroundColor = "#007B8A";
-        });
-
-        button.addEventListener("click", function() {
-            this.style.backgroundColor = "#003f44";
-            setTimeout(() => {
-                this.style.backgroundColor = "#007B8A";
-            }, 200);
+        // Add event listener for mouseleave (hover out)
+        button.addEventListener('mouseleave', function() {
+            // Restore original background color and text color
+            button.style.backgroundColor = '#007B8A';
+            button.style.color = '#fff';
         });
     });
 });
