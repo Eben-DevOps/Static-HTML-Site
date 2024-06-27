@@ -1,6 +1,6 @@
 # Deploying a Static Website on Nginx with Azure Linux Server
 
-This guide will walk you through the steps to deploy a static website using Nginx on an Azure Linux server. Nginx is a popular web server known for its performance and low resource consumption, making it ideal for hosting static websites.
+This guide will walk you through deploying a static website using Nginx on an Azure Linux server.
 
 ## Prerequisites
 
