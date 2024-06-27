@@ -1,18 +1,20 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.btn');
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".btn");
 
-    links.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", function() {
+            this.style.backgroundColor = "#005f69";
+        });
 
-            if (targetSection) {
-                window.scrollTo({
-                    top: targetSection.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
+        button.addEventListener("mouseout", function() {
+            this.style.backgroundColor = "#007B8A";
+        });
+
+        button.addEventListener("click", function() {
+            this.style.backgroundColor = "#003f44";
+            setTimeout(() => {
+                this.style.backgroundColor = "#007B8A";
+            }, 200);
         });
     });
 });
