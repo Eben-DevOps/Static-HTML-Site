@@ -47,10 +47,15 @@ Before you begin, ensure you have the following:
 2. **Clone the Githib Repository:**
    -Use git clone to download the static website files
    ```bash
-   Sudo git clone RepoURL
+   git clone https://your-repository-url.com /var/www/html/your-website
+
+3.**Configure Nginx:**
+   -Editing the Server Block to Serve the Web Page
+      -Open the config file uisng any editor of your choice. I used vim on my project
+   ```bash
+   sudo vim /etc/nginx/sites-available/your-website
 
 
 
-Configure Nginx:
 
 Create a new configuration file for your website (e.g., sudo nano /etc/nginx/sites-available/example.com).
